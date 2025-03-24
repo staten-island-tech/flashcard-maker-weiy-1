@@ -1,0 +1,17 @@
+[
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2023
+    },
+    {
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2022
+    },
+    {
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 2021
+    }
+]
