@@ -19,27 +19,47 @@ class teacher:
                 break
 
 
-
 class spudent:
     def spudent_cards():
         lepoints = 0
         correc_ansereds = 0
         strek = 0
+        total = 0
         with open("FlashCards.json", "r") as file:
             spudent_isansering = json.load(file)
         for card in spudent_isansering:
-            
+            spudentresponse = input(f'{card}')
+            if spudentresponse == spudent_isansering[card]:
+                lepoints = lepoints + 1
+                strek = strek + 1
+                correc_ansereds = correc_ansereds + 1
+                total = total + 1
+                print("big smar u got corret")
+                print(f"points: {lepoints}, corret answers/total: {correc_ansereds}/{total}, ur streak: {strek}")
+                if strek == 3:
+                    lepoints = lepoints + 3
+                    print(f"wow u streak is {strek}, u get bognus 3 point (current points: {lepoints})")
+                if strek == 7:
+                    lepoints = lepoints + 5
+                    print(f"wow u u streek is {strek}, u get bognus 5 point (current points: {lepoints})")
+
+            else:
+                print("o teh noes u got it rong (u strek get backed to zeero.)")
+                strek = 0
+                total = total + 1
+
 
 
 t_or_s = input("teacher mode or student mode (enter t or s): ")
+
 if t_or_s == "t":
     print("u are now in teacher mode")
-    print("(note: make everything lowercase so that the spudent doesnt inadvertently get it wrong and start questioning themselves)")
+    print("(note: make all answers lowercase and at end of question type '? ')")
     teacher.teacher_cards()
 
 elif t_or_s == "s":
-    print("u are now in student mode")
-    print("(note: answer everything in lowercase so that u doesnt inadvertently get it wrong cuz it might be big dum about the typography of letters)")
+    print("u are now in student mode. each correct answer is 1 point. u will get bongus points for streak.")
+    print("(note: answer everything in lowercase)")
     spudent.spudent_cards()
 
 else:
