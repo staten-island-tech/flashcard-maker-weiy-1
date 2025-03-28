@@ -41,7 +41,7 @@ class spudent:
                     print(f"wow u streak is {strek}, u get bognus 3 point (current points: {lepoints})")
                 if strek == 7:
                     lepoints = lepoints + 5
-                    print(f"wow u u streek is {strek}, u get bognus 5 point (current points: {lepoints})")
+                    print(f"wow u streek is {strek}, u get bognus 5 point (current points: {lepoints})")
 
             else:
                 print("o teh noes u got it rong (u strek get backed to zeero.)")
@@ -64,4 +64,3 @@ elif t_or_s == "s":
 
 else:
     print("ur input no working")
-    
