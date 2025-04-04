@@ -6,9 +6,9 @@ class teacher:
         while True:
             isingthewanting = input("do u are want to do the make card thing (yes or no): ")
             if isingthewanting == "yes":
-                questioning = input("enter question: ")
-                ansering = input("enter the answer to the question: ")
-                madedcards[questioning] = ansering
+                questioni = input("enter question: ")
+                anseri = input("enter the answer to the question: ")
+                madedcards[questioni] = anseri
             elif isingthewanting == "no":
                 print("ok bye byes u doned")
                 with open("FlashCards.json", "w") as file:
@@ -39,7 +39,7 @@ class spudent:
                 if strek == 3:
                     lepoints = lepoints + 3
                     print(f"wow u streak is {strek}, u get bognus 3 point (current points: {lepoints})")
-                if strek == 7:
+                elif strek == 7:
                     lepoints = lepoints + 5
                     print(f"wow u streek is {strek}, u get bognus 5 point (current points: {lepoints})")
 

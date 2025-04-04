@@ -1,9 +1,10 @@
 {
     "does alvin sell organs? ": "yes",
-    "what is 4!: ": "24",
+    "what is 4! ": "24",
     "are u using vs code? ": "yes",
-    "who found the Apple? ": "steve jobs",
-    "is henrique no nice guy? ": "yes",
-    "true/false: u are in siths: ": "true",
-    "is siths specialized? ": "yes"
+    "who founded the Apple ? ": "steve jobs",
+    "true/false: you are in manhattan. ": "false",
+    "are u in siths? ": "yes",
+    "what do siths call their students (techies, minions, or breaks): ": "techies",
+    "what sport do mr reerick coach? ": "volleyball"
 }
